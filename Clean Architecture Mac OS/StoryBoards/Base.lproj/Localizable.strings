@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  CleanArchitectureiOS
+
+  Created by Anshu Raghuvansi on 22/07/19.
+  Copyright © 2019 anshuraghuvansi. All rights reserved.
+*/
+
+"valid_password" = "Provide a valid password.";
+"valid_username" = "Provide a valid username.";
+"valid_email"    = "Provide a valid email address.";

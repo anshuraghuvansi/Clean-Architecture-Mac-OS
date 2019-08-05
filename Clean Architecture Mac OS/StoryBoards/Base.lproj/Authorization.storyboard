@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signin View Controller-->
+        <scene sceneID="Yeh-t8-Cq2">
+            <objects>
+                <viewController storyboardIdentifier="SigninViewController" id="m7a-Dh-g7W" customClass="SigninViewController" customModule="Clean_Architecture_Mac_OS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="FY9-Nv-GVR" customClass="DesignableView" customModule="Common">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jqj-WT-8Ie">
+                                <rect key="frame" x="14" y="352" width="45" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="23d-Vc-bK1"/>
+                                    <constraint firstAttribute="width" constant="45" id="l0I-1e-RBv"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" image="close" imagePosition="overlaps" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="ucH-k8-dz2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-ts-MXd">
+                                <rect key="frame" x="177" y="129" width="247" height="143"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2re-Oe-422">
+                                        <rect key="frame" x="96" y="126" width="54" height="17"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" id="wTF-NJ-wG8">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="0.96078431369999995" green="0.19215686269999999" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YO2-F1-KzC">
+                                        <rect key="frame" x="0.0" y="85" width="247" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Email" drawsBackground="YES" id="avP-DK-Skh">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LbR-fr-Vdb">
+                                        <rect key="frame" x="0.0" y="44" width="247" height="22"/>
+                                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="ETX-ox-atK">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
+                                        </secureTextFieldCell>
+                                    </secureTextField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-Hr-hkC">
+                                        <rect key="frame" x="94" y="0.0" width="58" height="25"/>
+                                        <buttonCell key="cell" type="square" title="SIGN IN" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YDp-BX-unT">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="jlg-wR-ECz"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3ra-ts-MXd" firstAttribute="centerY" secondItem="FY9-Nv-GVR" secondAttribute="centerY" id="2cL-O6-gnc"/>
+                            <constraint firstItem="Jqj-WT-8Ie" firstAttribute="top" secondItem="FY9-Nv-GVR" secondAttribute="top" constant="16" id="NAM-jK-Ee6"/>
+                            <constraint firstItem="Jqj-WT-8Ie" firstAttribute="leading" secondItem="FY9-Nv-GVR" secondAttribute="leading" constant="14" id="ljG-bQ-t9h"/>
+                            <constraint firstItem="3ra-ts-MXd" firstAttribute="centerX" secondItem="FY9-Nv-GVR" secondAttribute="centerX" id="uae-cV-WyL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" red="0.84832816896304275" green="0.92156887054443359" blue="0.92558640241622925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="Jqj-WT-8Ie" id="BBc-Q7-Zyn"/>
+                        <outlet property="emailTextField" destination="YO2-F1-KzC" id="hSG-8B-RKD"/>
+                        <outlet property="messageLabel" destination="2re-Oe-422" id="hZi-B9-Oyh"/>
+                        <outlet property="passwordTextField" destination="LbR-fr-Vdb" id="3N6-O0-cvE"/>
+                        <outlet property="signinButton" destination="WGK-Hr-hkC" id="R5x-xL-cIf"/>
+                    </connections>
+                </viewController>
+                <customObject id="ycT-zu-l6U" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="1006"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="YMl-DL-K03">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="h4P-uc-D4r" customClass="SignupViewController" customModule="Clean_Architecture_Mac_OS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="JVQ-us-KwN" customClass="DesignableView" customModule="Common">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="avO-C1-Plo">
+                                <rect key="frame" x="14" y="352" width="45" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="tT6-jC-idf"/>
+                                    <constraint firstAttribute="width" constant="45" id="uXY-gN-vVy"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" image="close" imagePosition="overlaps" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="TCa-WU-nGM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7q-bx-qO4">
+                                <rect key="frame" x="177" y="108" width="247" height="184"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-t8-RDu">
+                                        <rect key="frame" x="96" y="167" width="54" height="17"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" id="ay3-jx-2dB">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="0.96078431369999995" green="0.19215686269999999" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-4F-Kbd">
+                                        <rect key="frame" x="0.0" y="126" width="247" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Name" drawsBackground="YES" id="kgt-72-hVZ">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <outlet property="nextKeyView" destination="2Jm-xS-UxX" id="yAO-GZ-VD3"/>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-xS-UxX">
+                                        <rect key="frame" x="0.0" y="85" width="247" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Email" drawsBackground="YES" id="KMh-8f-0fx">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <outlet property="nextKeyView" destination="1LK-sJ-gZk" id="fUX-ST-JxU"/>
+                                        </connections>
+                                    </textField>
+                                    <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1LK-sJ-gZk">
+                                        <rect key="frame" x="0.0" y="44" width="247" height="22"/>
+                                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="0o9-DS-dpC">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
+                                        </secureTextFieldCell>
+                                        <connections>
+                                            <outlet property="nextKeyView" destination="1Be-4F-Kbd" id="OM5-mF-YCq"/>
+                                        </connections>
+                                    </secureTextField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xqO-j4-3Hk">
+                                        <rect key="frame" x="92" y="0.0" width="63" height="25"/>
+                                        <buttonCell key="cell" type="square" title="SIGN UP" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wG3-sy-MQu">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="3Xn-Fr-NIn"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="U7q-bx-qO4" firstAttribute="centerY" secondItem="JVQ-us-KwN" secondAttribute="centerY" id="51U-pf-Yty"/>
+                            <constraint firstItem="avO-C1-Plo" firstAttribute="leading" secondItem="JVQ-us-KwN" secondAttribute="leading" constant="14" id="5hB-fR-lFA"/>
+                            <constraint firstItem="U7q-bx-qO4" firstAttribute="centerX" secondItem="JVQ-us-KwN" secondAttribute="centerX" id="Jrz-2h-70u"/>
+                            <constraint firstItem="avO-C1-Plo" firstAttribute="top" secondItem="JVQ-us-KwN" secondAttribute="top" constant="16" id="WVd-Vs-2OZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" red="0.84832816899999997" green="0.92156887050000003" blue="0.92558640240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="avO-C1-Plo" id="z1o-Mf-wP1"/>
+                        <outlet property="emailTextField" destination="2Jm-xS-UxX" id="ell-Ow-3k0"/>
+                        <outlet property="messageLabel" destination="Q4f-t8-RDu" id="cRf-gq-Zeg"/>
+                        <outlet property="nameTextField" destination="1Be-4F-Kbd" id="qi5-kF-rIO"/>
+                        <outlet property="passwordTextField" destination="1LK-sJ-gZk" id="SBc-oD-l7g"/>
+                        <outlet property="signupButton" destination="xqO-j4-3Hk" id="LdS-1V-y2z"/>
+                    </connections>
+                </viewController>
+                <customObject id="mXa-EZ-yYx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="1006"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="13" height="13"/>
+    </resources>
+</document>
